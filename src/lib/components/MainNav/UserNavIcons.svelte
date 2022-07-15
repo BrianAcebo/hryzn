@@ -1,5 +1,5 @@
 <script>
-  import { HomeIcon, AddIcon, CompassIcon } from 'svelte-mono-icons';
+  import { HomeIcon, AddIcon, ExploreIcon } from 'svelte-mono-icons';
 </script>
 
 
@@ -12,7 +12,7 @@
 
 <a href="/explore">
   <label for="nav-explore" tabindex="0" class="btn btn-ghost btn-circle mt-2 mb-2">
-    <CompassIcon size="1.5x" class="icon_color" focusable="false" />
+    <ExploreIcon size="1.5x" class="icon_color" focusable="false" />
   </label>
 </a>
 
