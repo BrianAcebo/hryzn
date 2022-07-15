@@ -323,7 +323,7 @@
 
 
 <!-- Exit btn -->
-<a href="#" class="btn btn-sm btn-circle absolute right-2 top-2">✕</a>
+<label for="create-post" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
 <!-- /Exit btn -->
 
 
@@ -399,6 +399,7 @@
         {#if showVideoPreview && !showImagePreview}
         <video class="w-full max-w-md mx-auto my-5" controls bind:this={previewVideo}>
             Your browser does not support the video tag.
+            <track kind="captions">
         </video>
         {/if}
         <!-- /Video Preview -->
@@ -423,7 +424,7 @@
                 </div>
 
                 <div class="text-center">
-                    <a on:click={() => longerPost.set(!$longerPost)} class="btn btn-ghost group flex items-center justify-center p-3 text-base font-medium rounded-full">
+                    <div on:click={() => longerPost.set(!$longerPost)} class="btn btn-ghost group flex items-center justify-center p-3 text-base font-medium rounded-full">
                         <label for="post-long" tabindex="0" class="cursor-pointer">
                             {#if $longerPost == true}
                             <MinimizeIcon size="1.2x" class="icon_color" focusable="false" />
@@ -431,7 +432,7 @@
                             <ScaleIcon size="1.2x" class="icon_color" focusable="false" />
                             {/if}
                         </label>
-                    </a>
+                    </div>
                 </div>
             </div>
 

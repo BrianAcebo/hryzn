@@ -13,7 +13,7 @@
             </div>
         
             {#if verse.image_url}
-            <img src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{verse.image_url}" class="w-full h-full object-center object-cover" />
+            <img src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{verse.image_url}" class="w-full h-full object-center object-cover" alt="verse"/>
             {/if}
         </div>
 

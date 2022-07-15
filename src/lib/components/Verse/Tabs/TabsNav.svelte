@@ -67,24 +67,23 @@
     
 
     <!-- Nav -->
-    <a class="tab tab-bordered px-10 {$currentTab == 0 ? 'tab-active' : ''}" on:click={() => currentTab.set(0)}>Posts</a>
-    <a class="tab tab-bordered px-10 {$currentTab == 1 ? 'tab-active' : ''}" on:click={() => currentTab.set(1)}>Chat</a>
-    <!-- <a class="tab tab-bordered px-10 {$currentTab == 2 ? 'tab-active' : ''}" on:click={() => currentTab.set(2)}>Forum</a> -->
+    <p class="tab tab-bordered px-10 {$currentTab == 0 ? 'tab-active' : ''}" on:click={() => currentTab.set(0)}>Posts</p>
+    <p class="tab tab-bordered px-10 {$currentTab == 1 ? 'tab-active' : ''}" on:click={() => currentTab.set(1)}>Chat</p>
+    <!-- <p class="tab tab-bordered px-10 {$currentTab == 2 ? 'tab-active' : ''}" on:click={() => currentTab.set(2)}>Forum</p> -->
     <!-- /Nav -->
 
 
     <!-- Open Create Post Modal -->
     <div on:click={choosePlaceholder} class="absolute right-5 justify-center items-center {$currentTab == 0 ? 'flex' : 'hidden'}">
-      <a href="#create-post" class="btn btn-circle modal-button flex justify-center items-center text-xs">
-        <label for="open-post" class="text-xs cursor-pointer">
-          <EditIcon size="1.5x" class="icon_color text-xs" focusable="false" />
-        </label>
-      </a>
+      <label for="create-post" class="cursor-pointer btn btn-circle modal-button flex justify-center items-center text-xs">
+        <EditIcon size="1.5x" class="icon_color text-xs" focusable="false" />
+      </label>
     </div>
     <!-- /Open Create Post Modal -->
 
 
     <!-- Create Post Modal -->
+    <input type="checkbox" id="create-post" class="modal-toggle" />
     <div class="modal modal-bottom" id="create-post">
       <div class="modal-box ease-in-out duration-300 {$longerPost ? 'max-w-[800px] h-[80vh]': ''}">
         <CreatePost {placeholder} />

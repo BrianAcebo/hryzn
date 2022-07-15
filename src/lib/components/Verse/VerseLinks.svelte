@@ -24,7 +24,7 @@
         <label for="v-links-info" tabindex="0">
             <LayoutIcon size="1x" class="icon_color mr-5" focusable="false" />
         </label>
-        Info
+        <label for="v-info">Info</label>
     </a>
 
 
@@ -37,7 +37,8 @@
 </div>
 
 
-<div class="modal" id="info">
+<input type="checkbox" id="v-info" class="modal-toggle" />
+<div class="modal" id="v-info">
     <div class="modal-box relative lg:p-10 p-24">
 
         <VerseInfo {verse} {isOwnerOfVerse} />

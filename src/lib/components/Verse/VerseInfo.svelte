@@ -298,9 +298,9 @@
         {/if}
 
 
-    <a href="#" class="absolute right-0 top-0 p-3 bg-base-300 rounded-md">
-        <label for="v-info-close" tabindex="0" class="cursor-pointer" on:click={cancelEdit}>
+        <label for="v-info" tabindex="0" class="cursor-pointer absolute right-0 top-0 p-3 bg-base-300 rounded-md" on:click={cancelEdit}>
             <CloseIcon size="1x" class="icon_color" focusable="false" />
         </label>
-    </a>
+
+
 {/if}
