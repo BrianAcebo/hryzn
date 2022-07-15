@@ -165,7 +165,7 @@
   export let allMessages;
   export let owner;
   export let allMembers;
-  //export let pages;
+  //export let pages; // comment out for now
 
 
   // Check if user is viewing their own verse
