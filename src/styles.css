@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,h2,h3,h4,h5,h6 {
+    @apply font-heading;
+  }
+
+  a, p, input, span, div, textarea, button {
+    @apply font-sans;
+  }
+}
+
+/* General site styles */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+* {
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  background: hsl(var(--b1));
+  width: 100vw;
+  min-height: 100vh;
+}
+/* /General site styles */
+
+
+.icon_color {
+  fill: currentColor;
+}
+
+.no_scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.no_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.outline_none {
+  outline: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html id="html" lang="en" data-theme="dracula">
+	<head>
+
+		<!-- Meta -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+		<meta name="application-name" content="Hryzn" />
+		<meta name="keywords" id="keywords" content="Hryzn, social, social network, social platform, communities, niche topics, interests" />
+	
+		<meta property="og:site_name" content="Hryzn" />
+		<meta property="og:type" name="og:type" content="website" />
+		<meta property="og:url" name="og:url" content="https://myhryzn.com/" />
+		<meta property="og:image" content="/img/logos/webclip.png" />
+	
+		<link href="/img/logos/webclip.png" rel="apple-touch-icon" />
+		<link rel="icon" href="/img/logos/hryzn-favicon-v2-32x32.ico" />
+
+		%svelte.head%
+
+		<style>
+			body {
+				overflow: hidden;
+			}
+
+			.no_scrollbar {
+				-ms-overflow-style: none;  /* IE and Edge */
+				scrollbar-width: none;  /* Firefox */
+			}
+
+			.no_scrollbar::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
+	</head>
+	<body class="no_scrollbar">
+		<div>%svelte.body%</div>
+	</body>
+
+	<script>
+		const theme = localStorage.getItem('theme');
+
+		if (theme) {
+			document.getElementById("html").setAttribute("data-theme", theme);
+		} else {
+			document.getElementById("html").setAttribute("data-theme", "dracula");
+		}
+	</script>
+</html>
