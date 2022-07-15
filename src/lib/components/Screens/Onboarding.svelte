@@ -264,7 +264,7 @@
         {#if steps[currentActive] == 'Welcome'}
 
 
-        <img src="/img/site/onboarding/welcome.png" class="max-w-sm rounded-lg shadow-2xl">
+        <img src="/img/site/onboarding/welcome.png" class="max-w-sm rounded-lg shadow-2xl" alt="welcome">
         <h3 class="text-center my-10 font-bold text-xl">Welcome To Hryzn</h3>
         <p class="text-center">Hryzn is a social platform to connect with your people in a 3D virtual space.</p>
 
@@ -272,7 +272,7 @@
         {:else if steps[currentActive] == 'Discover'}
 
 
-        <img src="/img/site/onboarding/discover.png" class="max-w-sm rounded-lg shadow-2xl">
+        <img src="/img/site/onboarding/discover.png" class="max-w-sm rounded-lg shadow-2xl" alt="connect">
         <h3 class="text-center my-10 font-bold text-xl">Discover & Connect With Your People</h3>
         <p class="text-center">Explore and connect with countless communities through a variety of niche topics.</p>
 
@@ -280,7 +280,7 @@
         {:else if steps[currentActive] == 'Create'}
 
 
-        <img src="/img/site/onboarding/create.png" class="max-w-sm rounded-lg shadow-2xl">
+        <img src="/img/site/onboarding/create.png" class="max-w-sm rounded-lg shadow-2xl" alt="create">
         <h3 class="text-center my-10 font-bold text-xl">Create Your Own Space</h3>
         <p class="text-center">Create, edit, and enjoy your own 3D virtual spaces to hangout or share with friends.</p>
 

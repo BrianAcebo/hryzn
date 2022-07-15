@@ -5,7 +5,7 @@
       <em class="text-lg text-center font-bold text-white">Enter Meta</em>
     </div>
 
-    <img src="/img/site/verse/verse-virtual.png" class="w-full h-full object-center object-cover" />
+    <img src="/img/site/verse/verse-virtual.png" class="w-full h-full object-center object-cover" alt="meta"/>
 </div>
 
 

@@ -24,5 +24,5 @@
       <h1 class="text-xl text-center font-bold text-white">{name}</h1>
     </div>
 
-    <img src="{image_url == null ? 'https://picsum.photos/500/800' : verse_image}" class="w-full h-full object-center object-cover" />
+    <img src="{image_url == null ? 'https://picsum.photos/500/800' : verse_image}" class="w-full h-full object-center object-cover" alt="verse"/>
 </div>

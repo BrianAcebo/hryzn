@@ -28,7 +28,7 @@
     <a href="/profile/{msg.owner.data.username}">
         <div tabindex="0" class="avatar cursor-pointer ml-3">
             <div class="w-6 rounded-full ring ring-primary ring-offset-base-50 ring-offset-1">
-                <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{msg.owner.data.avatar_url}" />
+                <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{msg.owner.data.avatar_url}" alt="owner"/>
             </div>
         </div>
     </a>
@@ -45,7 +45,7 @@
     <a href="/profile/{msg.owner.data.username}">
         <div tabindex="0" class="avatar cursor-pointer mr-3">
             <div class="w-6 rounded-full ring ring-primary ring-offset-base-50 ring-offset-1">
-                <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{msg.owner.data.avatar_url}" />
+                <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{msg.owner.data.avatar_url}" alt="owner"/>
             </div>
         </div>
     </a>

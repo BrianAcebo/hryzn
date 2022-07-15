@@ -73,7 +73,8 @@
   <!-- Avatar Img -->
   <div tabindex="0" class="avatar cursor-pointer">
     <div class="w-6 rounded-full ring ring-primary ring-offset-base-50 ring-offset-1">
-      <img class="w-full h-full object-center object-cover" src="{!$user ? '' : `https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/${$user.avatar_url}`}" />    </div>
+      <img class="w-full h-full object-center object-cover" src="{!$user ? '' : `https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/${$user.avatar_url}`}" alt="avatar"/>
+    </div>
   </div>
   <!-- /Avatar Img -->
 

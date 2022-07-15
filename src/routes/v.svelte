@@ -597,7 +597,7 @@
     <ul class="menu p-4 overflow-y-auto w-60 md:w-80 bg-base-100 text-base-content">
 
       {#if currentCategory === ''}
-      <li on:click={() => { currentCategory = 'environment' }}><a>Environment</a></li>
+      <li on:click={() => { currentCategory = 'environment' }}>Environment</li>
       {/if}
 
       {#if currentCategory === 'environment'}
@@ -619,7 +619,7 @@
       {#if currentCatTab === 'trees'}
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/trees/palm-preview.png" id="environment/trees/palm" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/trees/palm-preview.png" id="environment/trees/palm" class="w-full" on:click={checkAssetClicked} alt="trees">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
@@ -627,7 +627,7 @@
         </div>
 
         <div id="slide2" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/trees/spruce-preview.png" id="environment/trees/spruce" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/trees/spruce-preview.png" id="environment/trees/spruce" class="w-full" on:click={checkAssetClicked} alt="trees">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
@@ -635,7 +635,7 @@
         </div>
 
         <div id="slide3" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/trees/baobab-preview.png" id="environment/trees/baobab" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/trees/baobab-preview.png" id="environment/trees/baobab" class="w-full" on:click={checkAssetClicked} alt="trees">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
@@ -643,7 +643,7 @@
         </div>
 
         <div id="slide4" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/trees/birch-preview.png" id="environment/trees/birch" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/trees/birch-preview.png" id="environment/trees/birch" class="w-full" on:click={checkAssetClicked} alt="trees">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide5" class="btn btn-circle">❯</a>
@@ -651,7 +651,7 @@
         </div>
 
         <div id="slide5" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/trees/dead-preview.png" id="environment/trees/dead" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/trees/dead-preview.png" id="environment/trees/dead" class="w-full" on:click={checkAssetClicked} alt="trees">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
@@ -666,7 +666,7 @@
       {#if currentCatTab === 'rocks'}
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/rocks/sharp-preview.png" id="environment/rocks/sharp" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/rocks/sharp-preview.png" id="environment/rocks/sharp" class="w-full" on:click={checkAssetClicked} alt="rocks">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
@@ -674,7 +674,7 @@
         </div>
 
         <div id="slide2" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/rocks/small-preview.png" id="environment/rocks/small" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/rocks/small-preview.png" id="environment/rocks/small" class="w-full" on:click={checkAssetClicked} alt="rocks">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
@@ -682,7 +682,7 @@
         </div>
 
         <div id="slide3" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/rocks/flat-preview.png" id="environment/rocks/flat" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/rocks/flat-preview.png" id="environment/rocks/flat" class="w-full" on:click={checkAssetClicked} alt="rocks">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
@@ -697,7 +697,7 @@
       {#if currentCatTab === 'plants'}
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/plants/carnations-preview.png" id="environment/plants/carnations" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/plants/carnations-preview.png" id="environment/plants/carnations" class="w-full" on:click={checkAssetClicked} alt="plants">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
@@ -705,7 +705,7 @@
         </div>
 
         <div id="slide2" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/plants/shrub-flowers-preview.png" id="environment/plants/shrub-flowers" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/plants/shrub-flowers-preview.png" id="environment/plants/shrub-flowers" class="w-full" on:click={checkAssetClicked} alt="plants">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
@@ -713,7 +713,7 @@
         </div>
 
         <div id="slide3" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/plants/shrub-preview.png" id="environment/plants/shrub" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/plants/shrub-preview.png" id="environment/plants/shrub" class="w-full" on:click={checkAssetClicked} alt="plants">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
@@ -721,7 +721,7 @@
         </div>
 
         <div id="slide4" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/plants/grass-preview.png" id="environment/plants/grass" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/plants/grass-preview.png" id="environment/plants/grass" class="w-full" on:click={checkAssetClicked} alt="plants">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide5" class="btn btn-circle">❯</a>
@@ -729,7 +729,7 @@
         </div>
 
         <div id="slide5" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/plants/mushrooms-preview.png" id="environment/plants/mushrooms" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/plants/mushrooms-preview.png" id="environment/plants/mushrooms" class="w-full" on:click={checkAssetClicked} alt="plants">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
@@ -744,7 +744,7 @@
       {#if currentCatTab === 'clouds'}
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/clouds/big-preview.png" id="environment/clouds/big" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/clouds/big-preview.png" id="environment/clouds/big" class="w-full" on:click={checkAssetClicked} alt="clouds">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
@@ -752,7 +752,7 @@
         </div>
 
         <div id="slide2" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/clouds/long-preview.png" id="environment/clouds/long" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/clouds/long-preview.png" id="environment/clouds/long" class="w-full" on:click={checkAssetClicked} alt="clouds">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
@@ -760,7 +760,7 @@
         </div>
 
         <div id="slide3" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/clouds/triangle-preview.png" id="environment/clouds/triangle" class="w-full" on:click={checkAssetClicked}>
+          <img src="/3D/verse/environment/clouds/triangle-preview.png" id="environment/clouds/triangle" class="w-full" on:click={checkAssetClicked} alt="clouds">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
@@ -775,7 +775,7 @@
       {#if currentCatTab === 'ground'}
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/ground-texture/sand.jpg" id="sand.jpg" class="w-full" on:click={addGround}>
+          <img src="/3D/verse/environment/ground-texture/sand.jpg" id="sand.jpg" class="w-full" on:click={addGround} alt="ground">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
@@ -783,7 +783,7 @@
         </div>
 
         <div id="slide2" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/ground-texture/concrete.jpg" id="concrete.jpg" class="w-full" on:click={addGround}>
+          <img src="/3D/verse/environment/ground-texture/concrete.jpg" id="concrete.jpg" class="w-full" on:click={addGround} alt="ground">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
@@ -791,7 +791,7 @@
         </div>
 
         <div id="slide3" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/ground-texture/rocks.jpg" id="rocks.jpg" class="w-full" on:click={addGround}>
+          <img src="/3D/verse/environment/ground-texture/rocks.jpg" id="rocks.jpg" class="w-full" on:click={addGround} alt="ground">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
@@ -799,7 +799,7 @@
         </div>
 
         <div id="slide4" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/ground-texture/forest.jpg" id="forest.jpg" class="w-full" on:click={addGround}>
+          <img src="/3D/verse/environment/ground-texture/forest.jpg" id="forest.jpg" class="w-full" on:click={addGround} alt="ground">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide5" class="btn btn-circle">❯</a>
@@ -807,7 +807,7 @@
         </div>
 
         <div id="slide5" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/ground-texture/meadow.png" id="meadow.png" class="w-full" on:click={addGround}>
+          <img src="/3D/verse/environment/ground-texture/meadow.png" id="meadow.png" class="w-full" on:click={addGround} alt="ground">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide6" class="btn btn-circle">❯</a>
@@ -815,7 +815,7 @@
         </div>
 
         <div id="slide6" class="carousel-item relative w-full cursor-pointer asset_slide">
-          <img src="/3D/verse/environment/ground-texture/grass.png" id="grass.png" class="w-full" on:click={addGround}>
+          <img src="/3D/verse/environment/ground-texture/grass.png" id="grass.png" class="w-full" on:click={addGround} alt="ground">
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide5" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>

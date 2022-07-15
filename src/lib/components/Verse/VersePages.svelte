@@ -125,7 +125,7 @@
         <h3>Pages</h3>
 
         {#if isOwnerOfVerse}
-        <label for="v-pages-add" tabindex="0" for="verse-pages-modal" class="btn modal-button">
+        <label tabindex="0" for="verse-pages-modal" class="btn modal-button">
             <AddIcon size="1x" class="icon_color" focusable="false" />
         </label>
         {/if}

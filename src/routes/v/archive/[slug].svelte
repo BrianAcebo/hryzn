@@ -127,7 +127,7 @@
   // Props data from SSR above
   export let verse;
   export let allPosts;
-  export let pages;
+  //export let pages;
   export let allMembers;
   export let owner;
 

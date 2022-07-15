@@ -89,7 +89,7 @@
     <!-- Post User -->
     <a href="/profile/{post.owner.data.username}" class="text-sm flex flex-row mb-5">
         <div class="w-5 h-5 rounded-full ring ring-primary ring-offset-base-50 ring-offset-1 overflow-hidden mr-3">
-        <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{post.owner.data.avatar_url}" />
+        <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{post.owner.data.avatar_url}" alt="owner"/>
         </div>
         @{post.owner.data.username}
     </a>

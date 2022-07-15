@@ -70,7 +70,7 @@
         {/if}
         <a href="/profile/{member.member[0].username}" class="text-sm flex flex-row mt-5 pl-3">
           <div class="w-5 h-5 rounded-full ring ring-primary ring-offset-base-50 ring-offset-1 overflow-hidden mr-3">
-            <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{member.member[0].avatar_url}" />
+            <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{member.member[0].avatar_url}" alt="member"/>
           </div>
           @{member.member[0].username}
         </a>
@@ -86,7 +86,7 @@
     
     <a href="/profile/{owner.data.username}" class="text-sm flex flex-row pl-3">
       <div class="w-5 h-5 rounded-full ring ring-primary ring-offset-base-50 ring-offset-1 overflow-hidden mr-3">
-        <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{owner.data.avatar_url}" />
+        <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{owner.data.avatar_url}" alt="owner"/>
       </div>
       @{owner.data.username}
     </a>
@@ -101,7 +101,7 @@
         {#if member.member[0].id != owner.data.id}
         <a href="/profile/{member.member[0].username}" class="text-sm flex flex-row mb-5 pl-3">
           <div class="w-5 h-5 rounded-full ring ring-primary ring-offset-base-50 ring-offset-1 overflow-hidden mr-3">
-            <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{member.member[0].avatar_url}" />
+            <img class="w-full h-full object-center object-cover" src="https://zlawlqqgophieeqsticp.supabase.co/storage/v1/object/public/avatars/{member.member[0].avatar_url}" alt="member" />
           </div>
           @{member.member[0].username}
         </a>

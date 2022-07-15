@@ -234,7 +234,7 @@
             <img class="h-32 w-auto mx-auto rounded-lg mb-5" bind:this={previewImage} src="" alt="Preview" />
             {:else}
                 {#if verse.image_url != null}
-                <img class="h-32 w-auto mx-auto rounded-lg mb-5" src="{image_url}" alt="Verse image" />
+                <img class="h-32 w-auto mx-auto rounded-lg mb-5" src="{image_url}" alt="Verse" />
                 {/if}
             {/if}
             <!-- /Img Preview -->
@@ -288,7 +288,7 @@
 
 
             {#if verse.image_url != null}
-            <img class="h-32 w-auto mx-auto rounded-lg mb-5" src="{image_url}" alt="Verse image" />
+            <img class="h-32 w-auto mx-auto rounded-lg mb-5" src="{image_url}" alt="Verse"/>
             {/if}
             
             <h3 class="font-bold text-lg w-full text-center m-0 mb-5">{verse.name}</h3>

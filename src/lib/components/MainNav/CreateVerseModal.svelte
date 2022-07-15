@@ -195,7 +195,7 @@
           {/if}
 
 
-          <input bind:value={vName} on:input={() => error = false} type="text" placeholder="Give it a cool name" class="{nameError ? 'input-error' : ''} input input-bordered w-full mb-5" required />
+          <input bind:value={vName} on:input={() => nameError = false} type="text" placeholder="Give it a cool name" class="{nameError ? 'input-error' : ''} input input-bordered w-full mb-5" required />
 
 
         {:else if verseNext == 1}
