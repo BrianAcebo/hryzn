@@ -250,7 +250,7 @@
             <!-- Edit Image -->
             {#if showEdit}
             <div class="form-control w-full {showEdit ? 'px-0' : 'px-3'} mb-5">
-                <label class="label">
+                <label for="v-info-img" class="label">
                     {#if verse.image_url != null}
                     <span class="label-text-alt">Change image</span>
                     {:else}
@@ -272,7 +272,7 @@
             {:else}
             <div class="flex justify-center items-center text-sm cursor-pointer" on:click={() => showEdit = !showEdit}>
                 Edit
-                <label tabindex="0" class="cursor-pointer">
+                <label for="v-info-edit" tabindex="0" class="cursor-pointer">
                     <PenIcon size="1x" class="icon_color ml-5" focusable="false" />
                 </label>
             </div>
@@ -299,7 +299,7 @@
 
 
     <a href="#" class="absolute right-0 top-0 p-3 bg-base-300 rounded-md">
-        <label tabindex="0" class="cursor-pointer" on:click={cancelEdit}>
+        <label for="v-info-close" tabindex="0" class="cursor-pointer" on:click={cancelEdit}>
             <CloseIcon size="1x" class="icon_color" focusable="false" />
         </label>
     </a>

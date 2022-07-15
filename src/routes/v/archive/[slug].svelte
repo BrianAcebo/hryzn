@@ -195,7 +195,7 @@
       <input bind:value={searchTerm} type="text" placeholder="Search posts in this verse..." class="input input-ghost border-none w-4/5 h-[48px] m-0 text-white outline-none outline_none" />
   
       <div class="w-1/5 h-[48px] flex justify-end items-center m-0 px-5">
-        <label tabindex="0" class="cursor-pointer">
+        <label for="archive-search" tabindex="0" class="cursor-pointer">
           <SearchIcon size="1.2x" class="icon_color" focusable="false" />
       </label>
       </div>

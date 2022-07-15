@@ -30,7 +30,7 @@
       <input type="text" placeholder="Search for..." class="input input-ghost border-none w-3/4 m-0 text-white outline_none drop-shadow-none focus:drop-shadow-none" />
 
       <div class="w-1/4 flex justify-center items-center m-0">
-        <label tabindex="0" class="cursor-pointer">
+        <label for="nav-search" tabindex="0" class="cursor-pointer">
           <SearchIcon size="1.2x" class="icon_color" focusable="false" />
         </label>
       </div>
@@ -43,7 +43,7 @@
 
     <!-- Chevron Left -->
     <a href="{$mainPage.mainPage}">
-      <label tabindex="0" class="btn btn-ghost btn-circle">
+      <label for="nav-back" tabindex="0" class="btn btn-ghost btn-circle">
         <ChevronLeftIcon size="1.5x" class="icon_color" focusable="false" />
       </label>
     </a>
@@ -80,7 +80,7 @@
 
       <!-- Themes -->
       <div class="dropdown dropdown-end md:static absolute right-5">
-        <label tabindex="0" class="btn btn-ghost btn-circle">
+        <label for="nav-theme" tabindex="0" class="btn btn-ghost btn-circle">
           <MoonIcon size="1.5x" class="icon_color" focusable="false" />
         </label>
 

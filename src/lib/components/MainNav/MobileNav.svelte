@@ -26,7 +26,7 @@
 
     <!-- Chevron Left -->
     <a href="{$mainPage.mainPage}">
-      <label tabindex="0" class="btn btn-ghost btn-circle">
+      <label for="nav-back" tabindex="0" class="btn btn-ghost btn-circle">
         <ChevronLeftIcon size="1.5x" class="icon_color" focusable="false" />
       </label>
     </a>
@@ -50,7 +50,7 @@
     
     <!-- Side Nav Btn -->
     <div class="flex flex-col items-center justify-center drawer-content -ml-20">
-      <label class="btn btn-circle btn-primary drawer-button lg:hidden" on:click={() => openMobile = !openMobile}>
+      <label for="side-nav" class="btn btn-circle btn-primary drawer-button lg:hidden" on:click={() => openMobile = !openMobile}>
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
       </label>
     </div>
@@ -67,7 +67,7 @@
 
     <!-- Themes -->
     <div class="dropdown dropdown-left dropdown-end">
-      <label tabindex="0" class="btn btn-ghost btn-circle">
+      <label for="nav-theme" tabindex="0" class="btn btn-ghost btn-circle">
         <MoonIcon size="1.5x" class="icon_color" focusable="false" />
       </label>
 

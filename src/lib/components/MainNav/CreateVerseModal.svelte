@@ -203,12 +203,12 @@
 
           <div class="form-control bg-base-300 p-5 rounded-lg">
             <div class="flex justify-center items-center flex-row w-full">
-              <label class="p-5 label cursor-pointer mx-2 badge {isPublic ? 'badge-secondary' : 'badge-ghost'}" on:click={() => isPublic = true}>
+              <label for="v-is-public" class="p-5 label cursor-pointer mx-2 badge {isPublic ? 'badge-secondary' : 'badge-ghost'}" on:click={() => isPublic = true}>
                 <span class="label-text mr-2">Public</span>
                 <input type="radio" name="radio-6" class="radio checked:bg-blue-500" checked />
               </label>
 
-              <label class="p-5 label cursor-pointer mx-2 badge {isPublic ? 'badge-ghost' : 'badge-secondary'}" on:click={() => isPublic = false}>
+              <label for="v-is-private" class="p-5 label cursor-pointer mx-2 badge {isPublic ? 'badge-ghost' : 'badge-secondary'}" on:click={() => isPublic = false}>
                 <span class="label-text mr-2">Private</span>
                 <input type="radio" name="radio-6" class="radio checked:bg-blue-500" />
               </label>
@@ -228,7 +228,7 @@
 
 
           <div class="form-control bg-base-300 p-5 rounded-lg">
-            <label class="label cursor-pointer">
+            <label for="v-is-viewable" class="label cursor-pointer">
               <span class="label-text">Would you like this verse to be viewable on the explore page?</span>
               <input type="checkbox" class="toggle toggle-secondary" checked on:click={() => isViewable = !isViewable} />
             </label>

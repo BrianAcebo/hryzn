@@ -161,17 +161,17 @@
     <!-- Post Btns -->
     <div class="flex flex-row items-center justify-end mt-5 absolute right-6 bottom-6">
         <!-- <div class="flex flex-row items-center">
-            <label tabindex="0" class="text-xs cursor-pointer">
+            <label for="post-like" tabindex="0" class="text-xs cursor-pointer">
                 <HeartIcon size="1.5x" class="icon_color text-xs mr-5" focusable="false" />
             </label>
 
-            <label tabindex="0" class="text-xs cursor-pointer">
+            <label for="post-comment" tabindex="0" class="text-xs cursor-pointer">
                 <MessageAltIcon size="1.5x" class="icon_color text-xs" focusable="false" />
             </label>
         </div> -->
 
         <div class="dropdown dropdown-end">
-            <label tabindex="0" class="text-xs cursor-pointer">
+            <label for="post-options" tabindex="0" class="text-xs cursor-pointer">
             <OptionsHorizontalIcon size="1.5x" class="icon_color text-xs" focusable="false" />
             </label>
 

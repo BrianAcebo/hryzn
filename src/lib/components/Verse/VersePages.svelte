@@ -125,7 +125,7 @@
         <h3>Pages</h3>
 
         {#if isOwnerOfVerse}
-        <label tabindex="0" for="verse-pages-modal" class="btn modal-button">
+        <label for="v-pages-add" tabindex="0" for="verse-pages-modal" class="btn modal-button">
             <AddIcon size="1x" class="icon_color" focusable="false" />
         </label>
         {/if}
@@ -168,12 +168,12 @@
 
         <div class="form-control bg-base-300 p-5 rounded-lg mb-5">
             <div class="flex justify-center items-center flex-row w-full">
-            <label class="p-5 label cursor-pointer mx-2 badge {isReadOnly ? 'badge-ghost' : 'badge-secondary'}" on:click={() => isReadOnly = false}>
+            <label for="page-create" class="p-5 label cursor-pointer mx-2 badge {isReadOnly ? 'badge-ghost' : 'badge-secondary'}" on:click={() => isReadOnly = false}>
                 <span class="label-text mr-2">User Ability</span>
                 <input type="radio" name="radio-6" class="radio checked:bg-blue-500" checked />
             </label>
 
-            <label class="p-5 label cursor-pointer mx-2 badge {isReadOnly ? 'badge-secondary' : 'badge-ghost'}" on:click={() => isReadOnly = true}>
+            <label for="page-create" class="p-5 label cursor-pointer mx-2 badge {isReadOnly ? 'badge-secondary' : 'badge-ghost'}" on:click={() => isReadOnly = true}>
                 <span class="label-text mr-2">Read Only</span>
                 <input type="radio" name="radio-6" class="radio checked:bg-blue-500" />
             </label>

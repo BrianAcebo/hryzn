@@ -82,7 +82,7 @@
   <ul tabindex="0" class="mt-7 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
     <li class="my-2">
       <a href="/profile/{$user.username}" class="relative text-center block">
-        <label tabindex="0" class="absolute left-3">
+        <label for="auth-user" tabindex="0" class="absolute left-3">
           <UserIcon size="1.5x" class="icon_color" focusable="false" />
         </label>
         @{$user.username}
@@ -91,7 +91,7 @@
     
     <li class="my-2">
       <a href="/notifications" class="relative text-center block">
-        <label tabindex="0" class="absolute left-3">
+        <label for="nav-notifications" tabindex="0" class="absolute left-3">
           <NotificationIcon size="1.5x" class="icon_color" focusable="false" />
         </label>
 
@@ -101,7 +101,7 @@
 
     <li class="my-2">
       <a href="/messages" class="relative text-center block">
-        <label tabindex="0" class="absolute left-3">
+        <label for="nav-messages" tabindex="0" class="absolute left-3">
           <MessageIcon size="1.5x" class="icon_color" focusable="false" />
         </label>
         Messages

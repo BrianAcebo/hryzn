@@ -302,18 +302,18 @@
 
 
             <div class="w-full">
-              <label class="label">
+              <label for="on-username" class="label">
                 <span class="label-text">Username</span>
               </label>
               <input bind:value={username} on:input={() => usernameError = false} type="text" placeholder="robochicken123" class="{usernameError ? 'input-error' : ''} input input-bordered w-full mb-5" required>
 
-              <label class="label">
+              <label for="on-bio" class="label">
                 <span class="label-text">Bio <span class="text-xs">(200 chars)</span></span>
               </label>
               <textarea bind:value={bio} on:input={() => bioError = false} type="text" placeholder="I like robots and chickens." class="{bioError ? 'input-error' : ''} input input-bordered w-full mb-5"></textarea>
 
               <div class="form-control w-full">
-                <label class="label">
+                <label for="on-img" class="label">
                     <span class="label-text-alt">Add an profile image</span>
                 </label>
                 <input bind:this={imageInput} on:change={uploadImage} class="p-4 block w-full text-xs rounded-lg cursor-pointer focus:outline-none bg-base-300 drop-shadow-xl" type="file" accept=".jpg, .jpeg, .png, .gif">

@@ -515,7 +515,7 @@
 
           <!-- <div class="form-control w-full">
             <div class="dropdown dropdown-right w-full">
-              <label tabindex="0" class="btn bg-base-100 w-full justify-between items-center capitalize flex">
+              <label for="v-dropdown" tabindex="0" class="btn bg-base-100 w-full justify-between items-center capitalize flex">
                 {music}
                 <VolumeUpIcon size="1.5x" class="icon_color" focusable="false" />
               </label>
@@ -531,7 +531,7 @@
           </div> -->
 
           <div class="form-control btn bg-base-100 flex justify-center items-center mt-5">
-            <label class="label cursor-pointer w-full">
+            <label for="v-time" class="label cursor-pointer w-full">
               <input bind:this={nightTimeBtn} type="checkbox" class="toggle" checked={isNightTime} on:change={checkNightTime}>
               {#if isNightTime}
               <span class="label-text capitalize">Night</span>
@@ -552,7 +552,7 @@
           </div>
 
           <div class="form-control btn bg-base-100 flex justify-center items-center mt-5">
-            <label class="label cursor-pointer w-full">
+            <label for="v-delete" class="label cursor-pointer w-full">
               <input type="radio" name="radio-6" class="radio checked:bg-base-400" value="REMOVE" checked={editorAction==="REMOVE"} on:change={changeEditorAction}>
               <span class="label-text capitalize">Remove</span>
               <DeleteIcon size="1.5x" class="icon_color" focusable="false" />
@@ -560,7 +560,7 @@
           </div>
 
           <div class="form-control btn bg-base-100 flex justify-center items-center mt-5">
-            <label class="label cursor-pointer w-full">
+            <label for="v-drag" class="label cursor-pointer w-full">
               <input type="radio" name="radio-6" class="radio checked:bg-base-400" value="DRAG" checked={editorAction==="DRAG"} on:change={changeEditorAction}>
               <span class="label-text capitalize">Drag</span>
               <DragIcon size="1.5x" class="icon_color" focusable="false" />
@@ -569,7 +569,7 @@
 
 
           <div class="form-control flex justify-between items-center mt-5">
-            <label class="label w-full">
+            <label for="v-rotate" class="label w-full">
               <span bind:this={rotateRightBtn} class="btn flex cursor-pointer">◀︎</span>
               <span class="label-text inline">Rotate</span>
               <span bind:this={rotateLeftBtn} class="btn flex cursor-pointer">▶︎</span>

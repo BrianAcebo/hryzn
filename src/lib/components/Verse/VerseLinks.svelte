@@ -13,7 +13,7 @@
 
 <div class="flex flex-col w-full px-5" on:click={() => { openLeftMobileNav.set(!$openLeftMobileNav) }}>
     <a class="text-xl mb-5 flex flex-row items-center {$currentVersePage == 'main' ? 'underline' : '' }" href="/v/{verse.slug}">
-        <label tabindex="0">
+        <label for="v-links-main" tabindex="0">
             <DropIcon size="1x" class="icon_color mr-5" focusable="false" />
         </label>
         Main
@@ -21,7 +21,7 @@
 
 
     <a class="text-xl mb-5 flex flex-row items-center" href="{verse.slug}#info">
-        <label tabindex="0">
+        <label for="v-links-info" tabindex="0">
             <LayoutIcon size="1x" class="icon_color mr-5" focusable="false" />
         </label>
         Info

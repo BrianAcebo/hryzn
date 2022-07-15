@@ -424,7 +424,7 @@
 
                 <div class="text-center">
                     <a on:click={() => longerPost.set(!$longerPost)} class="btn btn-ghost group flex items-center justify-center p-3 text-base font-medium rounded-full">
-                        <label tabindex="0" class="cursor-pointer">
+                        <label for="post-long" tabindex="0" class="cursor-pointer">
                             {#if $longerPost == true}
                             <MinimizeIcon size="1.2x" class="icon_color" focusable="false" />
                             {:else}

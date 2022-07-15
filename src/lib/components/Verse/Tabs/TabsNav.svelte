@@ -76,7 +76,7 @@
     <!-- Open Create Post Modal -->
     <div on:click={choosePlaceholder} class="absolute right-5 justify-center items-center {$currentTab == 0 ? 'flex' : 'hidden'}">
       <a href="#create-post" class="btn btn-circle modal-button flex justify-center items-center text-xs">
-        <label class="text-xs cursor-pointer">
+        <label for="open-post" class="text-xs cursor-pointer">
           <EditIcon size="1.5x" class="icon_color text-xs" focusable="false" />
         </label>
       </a>

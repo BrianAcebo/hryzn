@@ -143,10 +143,10 @@
 
 
         <!-- Chat text input -->
-        <label class="input-group input-group-lg rounded-lg drop-shadow-lg">
+        <label for="chat-text" class="input-group input-group-lg rounded-lg drop-shadow-lg">
             <textarea bind:value={msg} class="textarea outline_none bg-base-200 w-[90%] py-5 h-16 no_scrollbar" placeholder="Type Something Nice..."></textarea>
             <button type="submit" class="w-[10%] cursor-pointer flex justify-center items-center btn btn-circle h-16 border-none">
-                <label tabindex="0">
+                <label for="chat-send" tabindex="0">
                     <ArrowUpIcon size="1x" class="icon_color" focusable="false" />
                 </label>
             </button>
