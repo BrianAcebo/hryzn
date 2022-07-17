@@ -1,7 +1,9 @@
 <script>
   import UserNavIcons from './UserNavIcons.svelte';
   import IconLogo from '$lib/components/Brand/IconLogo.svelte';
-  import { MoonIcon, ChevronLeftIcon, SearchIcon } from 'svelte-mono-icons';
+  import Icon from 'svelte-awesome';
+  import moonO from 'svelte-awesome/icons/moonO';
+  import chevronLeft from 'svelte-awesome/icons/chevronLeft';
   import AuthBtn from './AuthBtn.svelte';
   import { themeChange } from 'theme-change';
   import { onMount } from 'svelte';
@@ -27,7 +29,7 @@
     <!-- Chevron Left -->
     <a href="{$mainPage.mainPage}">
       <label for="nav-back" tabindex="0" class="btn btn-ghost btn-circle">
-        <ChevronLeftIcon size="1.5x" class="icon_color" focusable="false" />
+        <Icon data={chevronLeft} scale="1.5"/>
       </label>
     </a>
     <!-- /Chevron Left -->
@@ -68,7 +70,7 @@
     <!-- Themes -->
     <div class="dropdown dropdown-left dropdown-end">
       <label for="nav-theme" tabindex="0" class="btn btn-ghost btn-circle">
-        <MoonIcon size="1.5x" class="icon_color" focusable="false" />
+        <Icon data={moonO} scale="1.5"/>
       </label>
 
       <div class="dropdown-content bg-base-200 text-base-content rounded-t-box rounded-b-box top-px h-96 w-52 overflow-y-auto shadow-2xl mt-16 no_scrollbar">

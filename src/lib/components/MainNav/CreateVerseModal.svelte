@@ -1,5 +1,6 @@
 <script>
-  import { CircleWarningIcon } from 'svelte-mono-icons';
+  import Icon from 'svelte-awesome';
+  import exclamationCircle from 'svelte-awesome/icons/exclamationCircle';
   import { Circle } from 'svelte-loading-spinners';
   import { addToast } from "$lib/stores/toastMsg";
   import { supabase } from "$lib/utils/supabase";
@@ -188,7 +189,7 @@
           {#if nameError}
           <div class="alert shadow-lg alert-error mb-5">
             <div class="text-center">
-              <CircleWarningIcon size="1x" class="icon_color" focusable="false" />
+              <Icon data={exclamationCircle} />
               <span class="text-xs text-center">{nameErrorMsg}</span>
             </div>
           </div>

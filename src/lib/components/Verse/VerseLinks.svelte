@@ -1,5 +1,8 @@
 <script>
-    import { DropIcon, LayoutIcon, DocumentIcon } from 'svelte-mono-icons';
+    import Icon from 'svelte-awesome';
+    import tint from 'svelte-awesome/icons/tint';
+    import archive from 'svelte-awesome/icons/archive';	
+    import list from 'svelte-awesome/icons/list';	
     import VerseInfo from '$lib/components/Verse/VerseInfo.svelte';
     import { currentVersePage } from "$lib/stores/Verse/currentVersePage";
     import { openLeftMobileNav } from "$lib/stores/openMobileNav";
@@ -13,25 +16,19 @@
 
 <div class="flex flex-col w-full px-5" on:click={() => { openLeftMobileNav.set(!$openLeftMobileNav) }}>
     <a class="text-xl mb-5 flex flex-row items-center {$currentVersePage == 'main' ? 'underline' : '' }" href="/v/{verse.slug}">
-        <label for="v-links-main" tabindex="0">
-            <DropIcon size="1x" class="icon_color mr-5" focusable="false" />
-        </label>
+        <Icon for="verse-pages-modal" data={tint} class="mr-5" scale="1.5" />
         Main
     </a>
 
 
-    <a class="text-xl mb-5 flex flex-row items-center" href="{verse.slug}#info">
-        <label for="v-links-info" tabindex="0">
-            <LayoutIcon size="1x" class="icon_color mr-5" focusable="false" />
-        </label>
+    <div class="text-xl mb-5 flex flex-row items-center cursor-pointer">
+        <Icon for="verse-pages-modal" data={list} class="mr-5" scale="1.5" />
         <label for="v-info">Info</label>
-    </a>
+    </div>
 
 
     <a class="text-xl mb-5 flex flex-row items-center {$currentVersePage == 'archive' ? 'underline' : '' }" href="/v/archive/{verse.slug}">
-        <label for="verseInfo" tabindex="0" class="">
-            <DocumentIcon size="1x" class="icon_color mr-5" focusable="false" />
-        </label>
+        <Icon for="verse-pages-modal" data={archive} class="mr-5" scale="1.5" />
         Archive
     </a>
 </div>

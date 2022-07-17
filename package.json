@@ -30,11 +30,11 @@
     "heic2any": "^0.0.3",
     "js-cookie": "^3.0.1",
     "jsonwebtoken": "^8.5.1",
+    "svelte-awesome": "^3.0.0",
     "svelte-cubed": "^0.2.1",
     "svelte-masonry-layout": "^0.0.7",
     "svelte-media-observer": "^1.0.2",
     "theme-change": "^2.0.2",
-    "three": "^0.138.2",
-    "threejs-object-controls": "^1.2.8"
+    "three": "^0.138.2"
   }
 }

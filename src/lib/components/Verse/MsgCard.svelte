@@ -1,9 +1,5 @@
 <script>
-    import { OptionsHorizontalIcon, HeartIcon, MessageAltIcon } from 'svelte-mono-icons';
     import { user } from "$lib/stores/user";
-    import { supabase } from "$lib/utils/supabase";
-    import { Circle } from "svelte-loading-spinners";
-    import { addToast } from "$lib/stores/toastMsg";
 
 
     export let msg;

@@ -110,6 +110,8 @@
   import { openRightMobileNav } from "$lib/stores/openMobileNav";
   import VerseMeta from '$lib/components/Verse/VerseMeta.svelte';
   import VerseUsers from '$lib/components/Verse/VerseUsers.svelte';
+  import Icon from 'svelte-awesome';
+  import search from 'svelte-awesome/icons/search';
 
 
   // This is to interchange between the chevron icon and the search bar in top nav
@@ -192,12 +194,10 @@
 
     <!-- Searchbar -->
     <div class="overflow-hidden w-full h-[48px] flex justify-between items-center bg-base-200 flex-row rounded-lg drop-shadow-lg">
-      <input bind:value={searchTerm} type="text" placeholder="Search posts in this verse..." class="input input-ghost border-none w-4/5 h-[48px] m-0 text-white outline-none outline_none" />
+      <input bind:value={searchTerm} type="text" placeholder="Search posts in this verse..." class="input input-ghost placeholder:text-base-content border-none w-4/5 h-[48px] m-0 outline-none outline_none" />
   
       <div class="w-1/5 h-[48px] flex justify-end items-center m-0 px-5">
-        <label for="archive-search" tabindex="0" class="cursor-pointer">
-          <SearchIcon size="1.2x" class="icon_color" focusable="false" />
-      </label>
+        <Icon data={search} />
       </div>
     </div>
     <!-- /Searchbar -->

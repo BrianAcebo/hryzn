@@ -1,8 +1,14 @@
 <script>
   import { supabase } from "$lib/utils/supabase";
   import { user } from "$lib/stores/user";
-  import { CircleHelpIcon, CloseIcon, CircleCheckIcon, CircleWarningIcon, NotificationIcon, UserIcon, MessageIcon } from 'svelte-mono-icons';
   import { media } from "$lib/cssHelpers/MediaQuery";
+  import Icon from 'svelte-awesome';
+  import userIcon from 'svelte-awesome/icons/user';
+  import envelopeO from 'svelte-awesome/icons/envelopeO';
+  import bellO from 'svelte-awesome/icons/bellO';
+  import exclamationCircle from 'svelte-awesome/icons/exclamationCircle';
+  import check from 'svelte-awesome/icons/check';
+  import infoCircle from 'svelte-awesome/icons/infoCircle';
 
 
   // Auth variables
@@ -84,7 +90,7 @@
     <li class="my-2">
       <a href="/profile/{$user.username}" class="relative text-center block">
         <label for="auth-user" tabindex="0" class="absolute left-3">
-          <UserIcon size="1.5x" class="icon_color" focusable="false" />
+          <Icon data={userIcon} />
         </label>
         @{$user.username}
       </a>
@@ -93,7 +99,7 @@
     <li class="my-2">
       <a href="/notifications" class="relative text-center block">
         <label for="nav-notifications" tabindex="0" class="absolute left-3">
-          <NotificationIcon size="1.5x" class="icon_color" focusable="false" />
+          <Icon data={bellO} />
         </label>
 
         Notifications
@@ -103,7 +109,7 @@
     <li class="my-2">
       <a href="/messages" class="relative text-center block">
         <label for="nav-messages" tabindex="0" class="absolute left-3">
-          <MessageIcon size="1.5x" class="icon_color" focusable="false" />
+          <Icon data={envelopeO} />
         </label>
         Messages
       </a>
@@ -138,7 +144,7 @@
     {#if msg_success}
     <div class="alert shadow-lg alert-success mb-5">
       <div class="text-center">
-        <CircleCheckIcon size="1x" class="icon_color" focusable="false" />
+        <Icon data={check} />
         <span class="text-xs text-center">{message}</span>
       </div>
     </div>
@@ -150,7 +156,7 @@
     {#if msg_error}
     <div class="alert shadow-lg alert-error mb-5">
       <div class="text-center">
-        <CircleWarningIcon size="1x" class="icon_color" focusable="false" />
+        <Icon data={exclamationCircle} />
         <span class="text-xs text-center">{message}</span>
       </div>
     </div>
@@ -161,7 +167,7 @@
     <!-- Close Btn -->
     <div class="modal-action m-0 absolute right-0 top-0">
       <label for="login-modal" class="btn btn-ghost btn-circle" on:click={clearMessage}>
-        <CloseIcon size="1x" class="icon_color" focusable="false" />
+        x
       </label>
     </div>
     <!-- /Close Btn -->
@@ -189,7 +195,7 @@
 
     <!-- Tooltip -->
     <div class="tooltip tooltip-bottom right-10 mt-5 absolute" data-tip="We do not store any private info from our community. The only credential we ask for is an email address.">
-      <CircleHelpIcon size="1.5x" class="icon_color" focusable="false" />
+      <Icon data={infoCircle} />
     </div>
     <!-- /Tooltip -->
 

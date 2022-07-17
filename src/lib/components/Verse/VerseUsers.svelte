@@ -1,5 +1,6 @@
 <script>
-  import { SearchIcon } from 'svelte-mono-icons';
+  import Icon from 'svelte-awesome';
+  import search from 'svelte-awesome/icons/search';
 
 
   // Component props passed over
@@ -40,12 +41,10 @@
 
   <!-- Searchbar -->
   <div class="w-full flex justify-center items-center border-2 border-base-300 flex-row overflow-hidden mb-5">
-    <input bind:value={searchTerm} type="text" placeholder="Users..." class="input input-ghost h-10 rounded-none rounded-l-lg bg-neutral-focus border-none w-3/4 m-0 text-white outline_none" />
+    <input bind:value={searchTerm} type="text" placeholder="Users..." class="input input-ghost h-10 rounded-none rounded-l-lg bg-neutral-focus border-none w-3/4 m-0 placeholder:text-base-content outline_none" />
 
     <div class="w-1/4 flex justify-center items-center m-0 bg-base-100 h-10 rounded-r-lg">
-      <label for="v-user-search" tabindex="0" class="cursor-pointer">
-        <SearchIcon size="1.2x" class="icon_color" focusable="false" />
-      </label>
+      <Icon data={search} />
     </div>
   </div>
   <!-- /Searchbar -->

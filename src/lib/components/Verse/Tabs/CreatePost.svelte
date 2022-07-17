@@ -1,5 +1,10 @@
 <script>
     import { ImageIcon, WebcamIcon, ScaleIcon, MinimizeIcon, CircleWarningIcon } from 'svelte-mono-icons';
+    import Icon from 'svelte-awesome';
+    import image from 'svelte-awesome/icons/image';
+    import videoCamera from 'svelte-awesome/icons/videoCamera';
+    import arrowsV from 'svelte-awesome/icons/arrowsV';
+    import exclamationCircle from 'svelte-awesome/icons/exclamationCircle';
     import { Circle } from "svelte-loading-spinners";
     import { longerPost } from "$lib/stores/Verse/longerPost";
     import { checkPost } from "$lib/utils/verse/verseUtils";
@@ -348,7 +353,7 @@
         {#if formError}
         <div class="alert shadow-lg alert-error mb-5">
             <div class="text-center">
-                <CircleWarningIcon size="1x" class="icon_color" focusable="false" />
+                <Icon data={exclamationCircle} />
                 <span class="text-xs text-center">{formErrorMsg}</span>
             </div>
         </div>
@@ -411,14 +416,14 @@
             <div class="flex items-center">
                 <div class="text-center mr-3">
                     <label for="postImage" tabindex="0" class="cursor-pointer btn btn-ghost group flex items-center justify-center p-3 text-base font-medium rounded-full">
-                        <ImageIcon size="1.2x" class="icon_color" focusable="false" />
+                        <Icon data={image} />
                     </label>
                     <input id="postImage" bind:this={imageInput} on:change={uploadImage} class="hidden" type="file" accept=".jpg, .jpeg, .png, .gif" multiple>
                 </div>
 
                 <div class="text-center mr-3">
                     <label for="postVideo" tabindex="0" class="cursor-pointer btn btn-ghost group flex items-center justify-center p-3 text-base font-medium rounded-full">
-                        <WebcamIcon size="1.2x" class="icon_color" focusable="false" />
+                        <Icon data={videoCamera} />
                     </label>
                     <input id="postVideo" bind:this={videoInput} on:change={uploadVideo} class="hidden" type="file" accept=".mp4, .ogg, .webm">
                 </div>
@@ -427,9 +432,9 @@
                     <div on:click={() => longerPost.set(!$longerPost)} class="btn btn-ghost group flex items-center justify-center p-3 text-base font-medium rounded-full">
                         <label for="post-long" tabindex="0" class="cursor-pointer">
                             {#if $longerPost == true}
-                            <MinimizeIcon size="1.2x" class="icon_color" focusable="false" />
+                            <Icon data={arrowsV} />
                             {:else}
-                            <ScaleIcon size="1.2x" class="icon_color" focusable="false" />
+                            <Icon data={arrowsV} />
                             {/if}
                         </label>
                     </div>

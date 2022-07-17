@@ -2,7 +2,10 @@
   import { user } from "$lib/stores/user";
   import { onMount } from 'svelte';
   import { themeChange } from 'theme-change';
-  import { MoonIcon, ChevronLeftIcon, SearchIcon } from 'svelte-mono-icons';
+  import Icon from 'svelte-awesome';
+  import moonO from 'svelte-awesome/icons/moonO';
+  import chevronLeft from 'svelte-awesome/icons/chevronLeft';
+  import search from 'svelte-awesome/icons/search';
   import AuthBtn from './AuthBtn.svelte';
   import UserNavIcons from './UserNavIcons.svelte';
   import { mainPage } from "$lib/stores/mainPage";
@@ -31,7 +34,7 @@
 
       <div class="w-1/4 flex justify-center items-center m-0">
         <label for="nav-search" tabindex="0" class="cursor-pointer">
-          <SearchIcon size="1.2x" class="icon_color" focusable="false" />
+          <Icon data={search} scale="1.5"/>
         </label>
       </div>
     </div>
@@ -44,7 +47,7 @@
     <!-- Chevron Left -->
     <a href="{$mainPage.mainPage}">
       <label for="nav-back" tabindex="0" class="btn btn-ghost btn-circle">
-        <ChevronLeftIcon size="1.5x" class="icon_color" focusable="false" />
+        <Icon data={chevronLeft} scale="1.5"/>
       </label>
     </a>
     <!-- /Chevron Left -->
@@ -81,7 +84,7 @@
       <!-- Themes -->
       <div class="dropdown dropdown-end md:static absolute right-5">
         <label for="nav-theme" tabindex="0" class="btn btn-ghost btn-circle">
-          <MoonIcon size="1.5x" class="icon_color" focusable="false" />
+          <Icon data={moonO} scale="1.5"/>
         </label>
 
         <div class="dropdown-content bg-base-200 text-base-content rounded-t-box rounded-b-box top-px h-96 w-52 overflow-y-auto shadow-2xl mt-16 no_scrollbar">

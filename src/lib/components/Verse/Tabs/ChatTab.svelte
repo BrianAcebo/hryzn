@@ -1,7 +1,9 @@
 <script>
     import MsgCard from "$lib/components/Verse/MsgCard.svelte";
     import { Circle } from "svelte-loading-spinners";
-    import { ArrowUpIcon, CircleWarningIcon } from 'svelte-mono-icons';
+    import Icon from 'svelte-awesome';
+    import exclamationCircle from 'svelte-awesome/icons/exclamationCircle';
+    import longArrowUp from 'svelte-awesome/icons/longArrowUp';
     import { addToast } from "$lib/stores/toastMsg";
     import { user } from "$lib/stores/user";
     import { supabase } from "$lib/utils/supabase";
@@ -134,7 +136,7 @@
         {#if formError}
         <div class="alert shadow-lg alert-error mb-5">
             <div class="text-center">
-                <CircleWarningIcon size="1x" class="icon_color" focusable="false" />
+                <Icon data={exclamationCircle} />
                 <span class="text-xs text-center">{formErrorMsg}</span>
             </div>
         </div>
@@ -147,7 +149,7 @@
             <textarea bind:value={msg} class="textarea outline_none bg-base-200 w-[90%] py-5 h-16 no_scrollbar" placeholder="Type Something Nice..."></textarea>
             <button type="submit" class="w-[10%] cursor-pointer flex justify-center items-center btn btn-circle h-16 border-none">
                 <label for="chat-send" tabindex="0">
-                    <ArrowUpIcon size="1x" class="icon_color" focusable="false" />
+                    <Icon data={longArrowUp} />
                 </label>
             </button>
         </label>

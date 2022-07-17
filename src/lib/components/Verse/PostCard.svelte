@@ -1,5 +1,8 @@
 <script>
-    import { OptionsHorizontalIcon, HeartIcon, MessageAltIcon } from 'svelte-mono-icons';
+    import Icon from 'svelte-awesome';
+    import heart from 'svelte-awesome/icons/heart';
+    import comment from 'svelte-awesome/icons/comment';
+    import ellipsisH from 'svelte-awesome/icons/ellipsisH';
     import { user } from "$lib/stores/user";
     import { supabase } from "$lib/utils/supabase";
     import { Circle } from "svelte-loading-spinners";
@@ -161,21 +164,17 @@
     <!-- Post Btns -->
     <div class="flex flex-row items-center justify-end mt-5 absolute right-6 bottom-6">
         <!-- <div class="flex flex-row items-center">
-            <label for="post-like" tabindex="0" class="text-xs cursor-pointer">
-                <HeartIcon size="1.5x" class="icon_color text-xs mr-5" focusable="false" />
-            </label>
+            <Icon data={heart} class="cursor-pointer mr-5"/>
 
-            <label for="post-comment" tabindex="0" class="text-xs cursor-pointer">
-                <MessageAltIcon size="1.5x" class="icon_color text-xs" focusable="false" />
-            </label>
+            <Icon data={comment} class="cursor-pointer"/>
         </div> -->
 
         <div class="dropdown dropdown-end">
-            <label for="post-options" tabindex="0" class="text-xs cursor-pointer">
-            <OptionsHorizontalIcon size="1.5x" class="icon_color text-xs" focusable="false" />
+            <label for="post-options" tabindex="0">
+                <Icon data={ellipsisH} class="cursor-pointer"/>
             </label>
 
-            <div tabindex="0" class="card compact dropdown-content shadow bg-base-100 rounded-box">
+            <div id="post-options" tabindex="0" class="card compact dropdown-content shadow bg-base-100 rounded-box">
                 <div class="card-body">
                     {#if isOwnerOfVerse || isOwnerOfPost}
                     <label for="delete-post-{post.id}" class="mb-5 text-xs cursor-pointer">Delete</label>
