@@ -8,7 +8,6 @@
     import { page } from '$app/stores';
     import { goto } from '$app/navigation';
     import { openLeftMobileNav } from "$lib/stores/openMobileNav";
-import { loop_guard } from 'svelte/internal';
 
 
     // Component props passed over

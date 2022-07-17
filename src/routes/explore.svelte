@@ -23,8 +23,7 @@
 </script>
 
 <script>
-    import Icon from 'svelte-awesome';
-    import search from 'svelte-awesome/icons/search';
+    import { SearchIcon } from 'svelte-mono-icons';
     import VerseCard from '$lib/components/Verse/VerseCard.svelte';
     import { mainPage } from "$lib/stores/mainPage";
 
@@ -69,7 +68,9 @@
                     <input type="text" placeholder="Search for anime...sports...makeup...memes...plants..." class="input bg-white border-none w-3/4 m-0 text-black outline_none" />
                 
                     <div class="w-1/5 h-[48px] flex justify-end items-center m-0 px-5">
-                        <Icon data={search} style="color: #D1D5DB" />
+                        <label for="explore-search" tabindex="0" class="cursor-pointer">
+                            <SearchIcon size="1.2x" class="icon_color" focusable="false" />
+                        </label>
                     </div>
                 </div>
             </div>

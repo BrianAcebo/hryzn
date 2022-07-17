@@ -1,7 +1,5 @@
 <script context="module">
   import { supabase } from "$lib/utils/supabase";
-  import PostCard from "$lib/components/Verse/PostCard.svelte";
-  import { SearchIcon } from 'svelte-mono-icons';
 
 
   export async function load({params}) {
@@ -110,8 +108,8 @@
   import { openRightMobileNav } from "$lib/stores/openMobileNav";
   import VerseMeta from '$lib/components/Verse/VerseMeta.svelte';
   import VerseUsers from '$lib/components/Verse/VerseUsers.svelte';
-  import Icon from 'svelte-awesome';
-  import search from 'svelte-awesome/icons/search';
+  import PostCard from "$lib/components/Verse/PostCard.svelte";
+  import { SearchIcon } from 'svelte-mono-icons';
 
 
   // This is to interchange between the chevron icon and the search bar in top nav
@@ -129,7 +127,7 @@
   // Props data from SSR above
   export let verse;
   export let allPosts;
-  //export let pages; // comment out for now
+  //export let pages;
   export let allMembers;
   export let owner;
 
@@ -194,10 +192,12 @@
 
     <!-- Searchbar -->
     <div class="overflow-hidden w-full h-[48px] flex justify-between items-center bg-base-200 flex-row rounded-lg drop-shadow-lg">
-      <input bind:value={searchTerm} type="text" placeholder="Search posts in this verse..." class="input input-ghost placeholder:text-base-content border-none w-4/5 h-[48px] m-0 outline-none outline_none" />
+      <input bind:value={searchTerm} type="text" placeholder="Search posts in this verse..." class="input input-ghost border-none w-4/5 h-[48px] m-0 placeholder:text-base-content outline-none outline_none" />
   
       <div class="w-1/5 h-[48px] flex justify-end items-center m-0 px-5">
-        <Icon data={search} />
+        <label for="archive-search" tabindex="0" class="cursor-pointer">
+          <SearchIcon size="1.2x" class="icon_color" focusable="false" />
+      </label>
       </div>
     </div>
     <!-- /Searchbar -->

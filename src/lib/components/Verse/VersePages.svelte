@@ -1,7 +1,5 @@
 <script>
-    import Icon from 'svelte-awesome';
-    import plus from 'svelte-awesome/icons/plus';
-    import exclamationCircle from 'svelte-awesome/icons/exclamationCircle';
+    import { AddIcon, CircleWarningIcon } from 'svelte-mono-icons';
     import { Circle } from "svelte-loading-spinners";
     import { checkPageName } from "$lib/utils/verse/verseUtils";
     import { addToast } from "$lib/stores/toastMsg";
@@ -128,7 +126,7 @@
 
         {#if isOwnerOfVerse}
         <label tabindex="0" for="verse-pages-modal" class="btn modal-button">
-            <Icon data={plus} />
+            <AddIcon size="1x" class="icon_color" focusable="false" />
         </label>
         {/if}
     </div>
@@ -160,7 +158,7 @@
         {#if formError}
         <div class="alert shadow-lg alert-error mb-5">
             <div class="text-center">
-                <Icon data={exclamationCircle} />
+                <CircleWarningIcon size="1x" class="icon_color" focusable="false" />
                 <span class="text-xs text-center">{formErrorMsg}</span>
             </div>
         </div>

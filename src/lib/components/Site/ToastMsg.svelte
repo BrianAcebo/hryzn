@@ -1,10 +1,8 @@
 <script>
   import { createEventDispatcher } from 'svelte';
   import { fade } from 'svelte/transition';
-  import Icon from 'svelte-awesome';
-  import check from 'svelte-awesome/icons/check';
-  import exclamationCircle from 'svelte-awesome/icons/exclamationCircle';
-  import infoCircle from 'svelte-awesome/icons/infoCircle';
+  import { CheckIcon, CircleWarningIcon, CircleInformationIcon, CloseIcon } from 'svelte-mono-icons';
+
 
   const dispatch = createEventDispatcher()
 
@@ -18,11 +16,11 @@
 
 
   {#if type === 'success'}
-    <Icon data={check} scale="1.5"/>
+    <CheckIcon size="1.5x" class="icon_color" focusable="false" />
   {:else if type === 'error'}
-    <Icon data={exclamationCircle} scale="1.5"/>
+    <CircleWarningIcon size="1.5x" class="icon_color" focusable="false" />
   {:else}
-  <Icon data={infoCircle} scale="1.5"/>
+    <CircleInformationIcon size="1.5x" class="icon_color" focusable="false" />
   {/if}
 
 
@@ -32,7 +30,9 @@
 
 
   {#if dismissible}
-    <button class="close" on:click={() => dispatch('dismiss')}>x</button>
+    <button class="close" on:click={() => dispatch('dismiss')}>
+      <CloseIcon size="1.5x" class="icon_color" focusable="false" />
+    </button>
   {/if}
 
 

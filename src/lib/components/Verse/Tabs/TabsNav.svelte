@@ -1,7 +1,6 @@
 <script>
     import { currentTab } from "$lib/stores/Verse/tabs";
-    import Icon from 'svelte-awesome';
-    import pencil from 'svelte-awesome/icons/pencil';
+    import { EditIcon } from 'svelte-mono-icons';
     import CreatePost from "$lib/components/Verse/Tabs/CreatePost.svelte";
     import { longerPost } from "$lib/stores/Verse/longerPost";
 
@@ -77,7 +76,7 @@
     <!-- Open Create Post Modal -->
     <div on:click={choosePlaceholder} class="absolute right-5 justify-center items-center {$currentTab == 0 ? 'flex' : 'hidden'}">
       <label for="create-post" class="cursor-pointer btn btn-circle modal-button flex justify-center items-center text-xs">
-        <Icon data={pencil} class="cursor-pointer"/>
+        <EditIcon size="1.5x" class="icon_color text-xs" focusable="false" />
       </label>
     </div>
     <!-- /Open Create Post Modal -->

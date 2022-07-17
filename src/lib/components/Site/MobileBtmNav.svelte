@@ -1,9 +1,5 @@
 <script>
-    import Icon from 'svelte-awesome';
-    import barChart from 'svelte-awesome/icons/barChart';
-    import users from 'svelte-awesome/icons/users';
-    import user from 'svelte-awesome/icons/user';
-    import book from 'svelte-awesome/icons/book';
+    import { BarChartAltIcon, UsersIcon, UserIcon, BookIcon } from 'svelte-mono-icons';
     import { openLeftMobileNav, openRightMobileNav } from "$lib/stores/openMobileNav";
 
     export let page;
@@ -15,9 +11,9 @@
         <button class="btn btn-outline p-1" on:click={() => { openLeftMobileNav.set(!$openLeftMobileNav); openRightMobileNav.set(false) }}>
             <label for="btm-nav-left" tabindex="0" class="text-xs cursor-pointer">
                 {#if page == 'verse'}
-                <Icon data={barChart} scale="1.5"/>
+                <BarChartAltIcon size="1.5x" class="icon_color text-xs" focusable="false" />
                 {:else}
-                <Icon data={user} scale="1.5"/>
+                <UserIcon size="1.5x" class="icon_color text-xs" focusable="false" />
                 {/if}
             </label>
         </button>
@@ -28,9 +24,9 @@
         <button class="btn btn-outline p-1" on:click={() => { openRightMobileNav.set(!$openRightMobileNav); openLeftMobileNav.set(false)}}>
             <label for="btm-nav-right" tabindex="0" class="text-xs cursor-pointer">
                 {#if page == 'verse'}
-                <Icon data={users} scale="1.5"/>
+                <UsersIcon size="1.5x" class="icon_color text-xs" focusable="false" />
                 {:else}
-                <Icon data={book} scale="1.5"/>
+                <BookIcon size="1.5x" class="icon_color text-xs" focusable="false" />
                 {/if}
             </label>
         </button>

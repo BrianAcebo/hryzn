@@ -1,8 +1,7 @@
 <script>
-    import Icon from 'svelte-awesome';
-    import edit from 'svelte-awesome/icons/edit';
-    import exclamationCircle from 'svelte-awesome/icons/exclamationCircle';
+    import { PenIcon, CloseIcon, CircleWarningIcon } from 'svelte-mono-icons';
     import { Circle } from "svelte-loading-spinners";
+    import { user } from "$lib/stores/user";
     import { checkVerseInfo } from "$lib/utils/verse/verseUtils";
     import { addToast } from "$lib/stores/toastMsg";
     import { supabase } from "$lib/utils/supabase";
@@ -222,7 +221,7 @@
             {#if formError}
             <div class="alert shadow-lg alert-error mb-5">
                 <div class="text-center">
-                    <Icon for="verse-pages-modal" data={exclamationCircle} />
+                    <CircleWarningIcon size="1x" class="icon_color" focusable="false" />
                     <span class="text-xs text-center">{formErrorMsg}</span>
                 </div>
             </div>
@@ -273,10 +272,9 @@
             {:else}
             <div class="flex justify-center items-center text-sm cursor-pointer" on:click={() => showEdit = !showEdit}>
                 Edit
-                <!-- <label for="v-info-edit" tabindex="0" class="cursor-pointer">
+                <label for="v-info-edit" tabindex="0" class="cursor-pointer">
                     <PenIcon size="1x" class="icon_color ml-5" focusable="false" />
-                </label> -->
-                <Icon data={edit} class="ml-5" />
+                </label>
             </div>
             {/if}
             <!-- /Edit Btns -->
@@ -300,7 +298,9 @@
         {/if}
 
 
-        <label for="v-info" tabindex="0" class="cursor-pointer absolute right-0 top-0 p-3 bg-base-300 rounded-md" on:click={cancelEdit}>✕</label>
+        <label for="v-info" tabindex="0" class="cursor-pointer absolute right-0 top-0 p-3 bg-base-300 rounded-md" on:click={cancelEdit}>
+            <CloseIcon size="1x" class="icon_color" focusable="false" />
+        </label>
 
 
 {/if}
