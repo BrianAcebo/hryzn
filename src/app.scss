@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MADEOkine';
+  src: url('./MADEOkine/MADEOkineSansPERSONALUSE-Regular.otf');
+  src: local('MADEOkine');
+}
+
+@font-face {
+  font-family: 'Roland';
+  src: url('../static/fonts/Roland/Roland-Regular.ttf');
+  src: local('Roland');
+}
+
+@font-face {
+  font-family: 'Super-Groteska';
+  src: url('../static/fonts/Super-Groteska/supergroteska-rg.ttf');
+  src: local('Super-Groteska');
+}
+
+@font-face {
+  font-family: 'Alkalami';
+  src: url('./Alkalami/Alkalami-Regular.ttf');
+  src: local('Alkalami');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Righteous&display=swap');
+
+
+
+/* Global Site Styles */
+a {
+  text-decoration: none;
+}
+
+@layer base { 
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  a, p, input, span, div, textarea, button, li {
+    @apply font-body;
+  }
+}
+
+/* General site styles */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+* {
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  cursor: url(https://cdn.custom-cursor.com/db/10115/32/mochi-mochi-peach-cat-and-bubble-tea-pointer.png), pointer!important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  width: 100vw;
+  min-height: 100vh;
+}
+/* /General site styles */
+
+.icon_color {
+  fill: currentColor;
+}
+
+.no_scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.outline_none {
+  outline: none;
+}

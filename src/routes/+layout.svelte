@@ -1,5 +1,7 @@
 <script>
-	import "../app.css";
-  </script>
+	import "../app.scss";
+	import NotLoggedInNav from "$lib/components/notLoggedInNav.svelte";
+</script>
   
-  <slot />
+<NotLoggedInNav />
+<slot />
