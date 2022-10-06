@@ -122,12 +122,12 @@
 <section class="w-full flex-row flex py-24 benefits-section">
 	<div class="max-w-7xl flex-row flex m-auto">
 		<div class="w-1/2 flex flex-col items-center justify-center z-0">
-			<img src="/images/home-benefits-2.jpg" alt="home benefits" class="w-1/2 h-auto boxed-border-1" /> 
-			<img src="/images/home-benefits-1.jpg" alt="home benefits" class="w-3/4 h-auto btm-img boxed-border-1" /> 
+			<img src="/images/home-benefits-2.jpg" alt="home benefits" class="w-1/2 h-auto boxed-border box-1" /> 
+			<img src="/images/home-benefits-1.jpg" alt="home benefits" class="w-3/4 h-auto btm-img boxed-border box-1" /> 
 		</div>
 
 		<div class="w-1/2 z-10 items-center justify-center">
-			<div class="max-w-2xl p-5 boxed-border-1 text-container">
+			<div class="max-w-2xl p-5 boxed-border box-1 text-container">
 				<h2 class="font-bold text-4xl capitalize mb-10">What the $#%! is a micro-community?</h2>
 				<p class="mb-14 text-xl">
 					Micro-communities are small groups of like minded individuals that share a common interest. These usually are tailored around
@@ -148,7 +148,7 @@
 <section class="w-full py-24 benefits-section">
 	<div class="max-w-7xl flex-row flex m-auto">
 		<div class="w-1/2 z-10 items-center justify-center">
-			<div class="max-w-2xl p-5 boxed-border-2 text-container-2">
+			<div class="max-w-2xl p-5 boxed-border box-2 text-container-2">
 				<h2 class="font-bold text-4xl capitalize mb-10">Ok, now what does a "hub of niches" mean?</h2>
 				<p class="mb-14 text-xl">
 					Well, we pride ourselves for being a hub of niches (that's kinda our thing) which basically means we house all different
@@ -163,12 +163,32 @@
 		</div>
 
 		<div class="w-1/2 flex flex-col items-center justify-center z-0">
-			<img src="/images/home-benefits-3.jpg" alt="home benefits" class="w-1/2 h-auto boxed-border-2" /> 
-			<img src="/images/home-benefits-4.jpg" alt="home benefits" class="w-3/4 h-auto btm-img-2 boxed-border-2" /> 
+			<img src="/images/home-benefits-3.jpg" alt="home benefits" class="w-1/2 h-auto boxed-border box-2" /> 
+			<img src="/images/home-benefits-4.jpg" alt="home benefits" class="w-3/4 h-auto btm-img-2 boxed-border box-2" /> 
 		</div>
 	</div>
 </section>
 <!-- /Benefits Section 2 -->
+
+<!-- Benefits Section 3 -->
+<section class="w-full flex-row flex py-24 benefits-section">
+	<div class="max-w-7xl flex-row flex m-auto">
+		<div class="w-1/2 flex flex-col items-center justify-center z-0">
+			<img src="/images/home-benefits-5.jpg" alt="home benefits" class="w-full h-auto boxed-border box-3" /> 
+		</div>
+
+		<div class="w-1/2 z-10 items-center justify-center">
+			<div class="max-w-2xl p-5 boxed-border box-3 text-container">
+				<h2 class="font-bold text-4xl capitalize mb-10">We want to help create a new future for social media.</h2>
+				<p class="mb-14 text-xl">
+					We want to create a new experience to social networking, one that's more natural to how we do it in real life.
+					We want to be a place where real conversations happen, not some fake profiles for likes. Here's how a web3 future can help:
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Benefits Section 3 -->
 
 <style lang="scss">
 	.hero-section {
@@ -241,18 +261,21 @@
 		}
 	}
 
-	.boxed-border-1,
-	.boxed-border-2 {
+	.boxed-border{
 		border-style: solid;
 		border-width: 2px;
 		border-color: #0e0c09;
 	}
 
-	.boxed-border-1 {
+	.boxed-border.box-1 {
 		box-shadow: 13px 13px 0 0 #fd8910;
 	}
 
-	.boxed-border-2 {
+	.boxed-border.box-2 {
 		box-shadow: 13px 13px 0 0 #7b39b8;
+	}
+
+	.boxed-border.box-3 {
+		box-shadow: 13px 13px 0 0 #f1dbdf;
 	}
 </style>
