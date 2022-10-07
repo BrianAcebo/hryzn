@@ -174,16 +174,34 @@
 <section class="w-full flex-row flex py-24 benefits-section">
 	<div class="max-w-7xl flex-row flex m-auto">
 		<div class="w-1/2 flex flex-col items-center justify-center z-0">
-			<img src="/images/home-benefits-5.jpg" alt="home benefits" class="w-full h-auto boxed-border box-3" /> 
+			<img src="/images/home-benefits-5.jpg" alt="home benefits" class="w-full h-auto boxed-border box-4" /> 
 		</div>
 
 		<div class="w-1/2 z-10 items-center justify-center">
-			<div class="max-w-2xl p-5 boxed-border box-3 text-container">
+			<div class="max-w-2xl p-5 boxed-border box-4 text-container">
 				<h2 class="font-bold text-4xl capitalize mb-10">We want to help create a new future for social media.</h2>
 				<p class="mb-14 text-xl">
 					We want to create a new experience to social networking, one that's more natural to how we do it in real life.
 					We want to be a place where real conversations happen, not some fake profiles for likes. Here's how a web3 future can help:
 				</p>
+
+				<div class="ml-10">
+					<div class="flex flex-row items-center w-full mb-10">
+						<div class="bullet-point bg-blue-500 mr-5"></div>
+						<p class="mr-10">Something something something with a little more inside</p>
+
+						<div class="bullet-point bg-blue-500 mr-5"></div>
+						<p>Something something something with a little more inside</p>
+					</div>
+
+					<div class="flex flex-row items-center w-full">
+						<div class="bullet-point bg-blue-500 mr-5"></div>
+						<p class="mr-10">Something something something with a little more inside</p>
+						
+						<div class="bullet-point bg-blue-500 mr-5"></div>
+						<p>Something something something with a little more inside</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -252,11 +270,13 @@
 			background: #fcf5ee;
 			margin-top: 10%;
 			margin-left: -10%;
+			cursor: url(https://cdn.custom-cursor.com/db/7647/32/meme-pop-cat-pointer.png) , pointer!important;
 		}
 
 		.text-container-2 {
 			background: #fcf5ee;
 			margin-top: 10%;
+			cursor: url(https://cdn.custom-cursor.com/db/7647/32/meme-pop-cat-pointer.png) , pointer!important;
 			margin-right: -10%;
 		}
 	}
@@ -277,5 +297,17 @@
 
 	.boxed-border.box-3 {
 		box-shadow: 13px 13px 0 0 #f1dbdf;
+	}
+
+	.boxed-border.box-4 {
+		box-shadow: 13px 13px 0 0 #004b91;
+	}
+
+	.bullet-point {
+		min-width: 18px;
+		min-height: 18px;
+		max-width: 18px;
+		max-height: 18px;
+		border-radius: 50%;
 	}
 </style>
