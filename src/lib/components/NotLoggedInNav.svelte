@@ -4,7 +4,7 @@
   let openNav = false;
 </script>
 
-<header class="not-logged-in-nav fixed top-0 left-0 right-0 w-full p-4 z-10 max-w-7xl m-auto z-20">
+<header id="not-logged-in-nav" class="not-logged-in-nav fixed top-0 left-0 right-0 w-full p-4 z-10 max-w-7xl m-auto z-20">
   <nav class="flex justify-between items-center w-full">
     <div class="flex flex-row">
       <a href="/" class="logo mr-10">

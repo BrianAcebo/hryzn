@@ -3,7 +3,7 @@
 </script>
 
 <!-- Hero Section -->
-<section class="w-full h-screen relative hero-section">
+<section class="w-full h-screen relative hero-section white-nav-color">
 	<div class="absolute top-1/4 m-auto right-0 left-0">
 		<h1 class="text-center font-bold font-body text-white capitalize">
 			The social platform where it's not about <span>people.</span> 
@@ -178,7 +178,7 @@
 		</div>
 
 		<div class="w-1/2 z-10 items-center justify-center">
-			<div class="max-w-2xl p-5 boxed-border box-4 text-container">
+			<div class="max-w-2xl p-5 boxed-border box-3 text-container">
 				<h2 class="font-bold text-4xl capitalize mb-10">We want to help create a new future for social media.</h2>
 				<p class="mb-14 text-xl">
 					We want to create a new experience to social networking, one that's more natural to how we do it in real life.
@@ -270,13 +270,11 @@
 			background: #fcf5ee;
 			margin-top: 10%;
 			margin-left: -10%;
-			cursor: url(https://cdn.custom-cursor.com/db/7647/32/meme-pop-cat-pointer.png) , pointer!important;
 		}
 
 		.text-container-2 {
 			background: #fcf5ee;
 			margin-top: 10%;
-			cursor: url(https://cdn.custom-cursor.com/db/7647/32/meme-pop-cat-pointer.png) , pointer!important;
 			margin-right: -10%;
 		}
 	}
@@ -296,10 +294,6 @@
 	}
 
 	.boxed-border.box-3 {
-		box-shadow: 13px 13px 0 0 #f1dbdf;
-	}
-
-	.boxed-border.box-4 {
 		box-shadow: 13px 13px 0 0 #004b91;
 	}
 
